@@ -25,7 +25,7 @@ def predict():
         arr=np.array([[data1,data2,data3,data4,data5,data6,data7]])
         print(arr)
         pred = model.predict(arr)[0]
-        return render_template('after.html', data = pred)
+        return render_template('after.html', data = pred, givenValues = arr)
     else:
         return render_template('index.html')
 

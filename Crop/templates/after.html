@@ -2,6 +2,14 @@
     <body>
         <center>
             <h2>Crop Recommendation</h2><hr><br>
+            <p>Given values are:<br>
+                Nitrogen: {{ givenValues[0][0] }}<br>
+                Phosphorous: {{ givenValues[0][1] }}<br>
+                Potassium: {{ givenValues[0][2] }}<br>
+                Temperature: {{ givenValues[0][3] }}<br>
+                Humidity: {{ givenValues[0][4] }}<br>
+                PH: {{ givenValues[0][5] }}<br>
+                Rainfall: {{ givenValues[0][6] }}<br></p>
             <h3>You should grow <i>{{ data }}</i> in your farm</h3><br>
             <button><a style="text-decoration: none" href = "/">Try another prediction</a>
             </button>
