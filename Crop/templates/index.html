@@ -1,25 +1,28 @@
 <html>
     <body>
+        <center>
+        <h2>Please fill your soil and climate details:</h2><hr><br>
 <!--          <form action="{{url_for('predict')}}"method="post"> -->
-             <form action="{{'predict'}}" method="POST">
-              <label for="N">Nitrogen:</label><br>
-              <input type="float", name="N"><br>
-              <label for="P">Phosphorous:</label><br>
-              <input type="float", name="P"><br>
-              <label for="K">Potassium:</label><br>
-              <input type="float", name="K"><br>
-              <label for="temperature">Temperature:</label><br>
-              <input type="float", name="temperature"><br>
-              <label for="humidity">Humidity:</label><br>
-              <input type="float", name="humidity"><br>
-              <label for="ph">PH:</label><br>
-              <input type="float", name="ph"><br>
-              <label for="rainfall">Rainfall:</label><br>
-              <input type="float", name="rainfall"><br>
-              <input type="submit", value='predict'>
-         </form> 
+            <form action="{{'predict'}}" method="POST">
+              <label for="N">Nitrogen:</label>
+              <input type="float", name="N"><br><br>
+              <label for="P">Phosphorous:</label>
+              <input type="float", name="P"><br><br>
+              <label for="K">Potassium:</label>
+              <input type="float", name="K"><br><br>
+              <label for="temperature">Temperature:</label>
+              <input type="float", name="temperature"><br><br>
+              <label for="humidity">Humidity:</label>
+              <input type="float", name="humidity"><br><br>
+              <label for="ph">PH:</label>
+              <input type="float", name="ph"><br><br>
+              <label for="rainfall">Rainfall:</label>
+              <input type="float", name="rainfall"><br><br><br>
+              <input type="submit", value='Predict'>
+            </form> 
         <br>
         <br>
-        {{ prediction_text }}
+        <!--{{ prediction_text }}-->
+        </center>
     </body>
 </html>
