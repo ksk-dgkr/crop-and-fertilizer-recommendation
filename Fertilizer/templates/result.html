@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <center>
+            <h2>Fertilizer Recommendation</h2><hr><br>
+            <p>Given values are:<br>
+                Temperature: {{ givenValues[0][0] }}<br>
+                Humidity: {{ givenValues[0][1] }}<br>
+                Moisture: {{ givenValues[0][2] }}<br>
+                Soil Type: {{ givenValues[0][3] }}<br>
+                Crop Type: {{ givenValues[0][4] }}<br>
+                Nitrogen: {{ givenValues[0][5] }}<br>
+                Potassium: {{ givenValues[0][6] }}<br>
+                Phosphorous: {{ givenValues[0][7] }}<br></p>
+
+            <h3>You should use <i>{{ data }}</i> fertilizer in your farm</h3><br>
+            <button><a style="text-decoration: none" href = "/">Try another prediction</a>
+            </button>
+        </center>
+    </body>
+</html>
