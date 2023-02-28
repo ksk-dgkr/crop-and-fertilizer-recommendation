@@ -1,8 +1,8 @@
 import numpy as np
 from flask import Flask,request,render_template
-import pickle
+import joblib
 
-model=pickle.load(open('mod.pkl','rb'))
+model=joblib.load(open('mod.pkl','rb'))
 
 app=Flask(__name__)
 
