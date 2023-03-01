@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <h2 class="logo">AgriCo</h2>
+        <title>CROP RECOMMENDATION </title>
+        <link rel="stylesheet" href="/static/CSS/style1.css" type="text/css">
+    </head>
+    <body>
+        <center>
+        <style>
+			body {
+			  background-image: url('/static/images/wheatimg.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;  
+			  background-size: cover;
+			}
+			</style>
+          <div class="crop">
+            <h2>Please fill your soil and climate details:</h2><hr><br>
+            <form action="{{'predict_crop'}}" method="POST">
+              <table>
+                <tr><td><label for="N">Nitrogen:&nbsp;</label></td>
+                  <td><input type="float", name="N"></td></tr>
+                <tr><td><label for="P">Phosphorous:&nbsp;</label></td>
+                  <td><input type="float", name="P"></td></tr>
+                <tr><td><label for="K">Potassium:&nbsp;</label></td>
+                  <td><input type="float", name="K"></td></tr>
+                <tr><td><label for="temperature">Temperature:&nbsp;</label></td>
+                  <td><input type="float", name="temperature"></td></tr>
+                <tr><td><label for="humidity">Humidity:&nbsp;</label></td>
+                  <td><input type="float", name="humidity"></td></tr>
+                <tr><td><label for="ph">PH:&nbsp;</label></td>
+                  <td><input type="float", name="ph"></td></tr>
+                <tr><td><label for="rainfall">Rainfall:&nbsp;</label></td>
+                  <td><input type="float", name="rainfall"></td></tr> 
+              </table>
+              <input class="btnn", type="submit", value='Predict'><br>
+            </form>
+          </div> 
+        <br>
+        <br>
+        <!--{{ prediction_text }}-->
+        </center>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/CSS/style1.css" type="text/css">
+        <style>
+			body {
+			  background-image: url('/static/images/wheatimg.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;  
+			  background-size: cover;
+			}
+		</style>
+    </head>
+    <body>
+        <center>
+            <div class="crop">
+            <h2>Crop Recommendation:</h2><hr><br>
+            <p>Given values are:<br>
+                Nitrogen: {{ givenValues[0][0] }}<br>
+                Phosphorous: {{ givenValues[0][1] }}<br>
+                Potassium: {{ givenValues[0][2] }}<br>
+                Temperature: {{ givenValues[0][3] }}<br>
+                Humidity: {{ givenValues[0][4] }}<br>
+                PH: {{ givenValues[0][5] }}<br>
+                Rainfall: {{ givenValues[0][6] }}<br><br></p>
+            <h3>You should grow <i>{{ data }}</i> in your farm</h3><br>
+            <button><a class="btnn", href = "/">Try another prediction</a>
+            </button>
+        </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<h2 class="logo">AgriCo</h2>
+		<title>FERTILIZER RECOMMENDATION </title>
+		<link rel="stylesheet" href="/static/CSS/style1.css" type="text/css">
+	</head>
+	<body>
+		<center>
+		<style>
+	  body {
+		background-image: url('/static/images/ferti.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;  
+		background-size: cover;
+	  }
+	  </style>
+		  <div class="crop">
+			<h2>Please fill your soil, climate and crop details:</h2><hr><br>
+			<form action="{{'predict_fert'}}" method="POST">
+			  <table>
+				<tr><td><label for="Temperature">Temperature:&nbsp;</label></td>
+   				  <td><input type="float", name="Temperature"></td></tr>
+   				<tr><td><label for="Humidity">Humidity:&nbsp;</label></td>
+				  <td><input type="float", name="Humidity"></td></tr>
+				<tr><td><label for="Moisture">Moisture:&nbsp;</label></td>
+				  <td><input type="float", name="Moisture"></td></tr>
+				<tr><td><label for="Soil_Type">Soil Type:&nbsp;</label></td>
+				  <td><input type="text", name="Soil_Type"></td></tr>
+				<tr><td><label for="Crop_Type">Crop Type:&nbsp;</label></td>
+				  <td><input type="text", name="Crop_Type"></td></tr>
+				<tr><td><label for="Nitrogen">Nitrogen:&nbsp;</label></td>
+				  <td><input type="float", name="Nitrogen"></td></tr>
+				<tr><td><label for="Potassium">Potassium:&nbsp;</label></td>
+				  <td><input type="float", name="Potassium"></td></tr>
+				<tr><td><label for="Phosphorous">Phosphorous:&nbsp;</label></td>
+				  <td><input type="float", name="Phosphorous"></td></tr>
+			  </table>
+			  <input class="btnn", type="submit", value='Predict'><br>
+            </form>
+		</div> 
+		<br>
+        <br>
+		</center>
+	</body>
+</html>
