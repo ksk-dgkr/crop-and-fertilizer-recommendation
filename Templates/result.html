@@ -1,7 +1,19 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="/static/CSS/style1.css" type="text/css">
+        <style>
+			body {
+			  background-image: url('/static/images/ferti.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;  
+			  background-size: cover;
+			}
+		</style>
+    </head>
     <body>
         <center>
-            <h2>Fertilizer Recommendation</h2><hr><br>
+            <div class="crop">
+            <h2>Fertilizer Recommendation:</h2><hr><br>
             <p>Given values are:<br>
                 Temperature: {{ givenValues[0][0] }}<br>
                 Humidity: {{ givenValues[0][1] }}<br>
@@ -10,11 +22,11 @@
                 Crop Type: {{ givenValues[0][4] }}<br>
                 Nitrogen: {{ givenValues[0][5] }}<br>
                 Potassium: {{ givenValues[0][6] }}<br>
-                Phosphorous: {{ givenValues[0][7] }}<br></p>
-
-            <h3>You should use <i>{{ data }}</i> fertilizer in your farm</h3><br>
-            <button><a style="text-decoration: none" href = "/">Try another prediction</a>
+                Phosphorous: {{ givenValues[0][7] }}<br><br></p>
+                <h3>You should use <i>{{ data }}</i> fertilizer in your farm</h3><br>
+            <button><a class="btnn", href = "/">Try another prediction</a>
             </button>
+        </div>
         </center>
     </body>
 </html>

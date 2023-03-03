@@ -24,10 +24,33 @@
 				  <td><input type="float", name="Humidity"></td></tr>
 				<tr><td><label for="Moisture">Moisture:&nbsp;</label></td>
 				  <td><input type="float", name="Moisture"></td></tr>
+
 				<tr><td><label for="Soil_Type">Soil Type:&nbsp;</label></td>
-				  <td><input type="text", name="Soil_Type"></td></tr>
+					<td><input type="text", list="Soil_Type", name="Soil_Type">
+					<datalist id="Soil_Type">
+						<option value="Loamy">
+					  	<option value="Sandy">
+					  	<option value="Clayey">
+					  	<option value="Black">
+						<option value="Red">
+					</datalist></td></tr>
+				 
 				<tr><td><label for="Crop_Type">Crop Type:&nbsp;</label></td>
-				  <td><input type="text", name="Crop_Type"></td></tr>
+				  <td><input type="text", list="Crop_Type", name="Crop_Type">
+					<datalist id="Crop_Type">
+						<option value="Sugarcane">
+						<option value="Cotton">
+						<option value="Millets">
+						<option value="Paddy">
+						<option value="Pulses">
+						<option value="Wheat">
+						<option value="Tobacco">
+						<option value="Barley">
+						<option value="Oil seeds">
+						<option value="Ground Nuts">
+						<option value="Maize">
+				  	</datalist></td></tr>
+
 				<tr><td><label for="Nitrogen">Nitrogen:&nbsp;</label></td>
 				  <td><input type="float", name="Nitrogen"></td></tr>
 				<tr><td><label for="Potassium">Potassium:&nbsp;</label></td>
